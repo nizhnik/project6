@@ -1,6 +1,5 @@
 package com.nixsolutions.mvc;
 
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +11,6 @@ public class HelloController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
 		model.addAttribute("message", "Hello world!");
-		return "Hello, World!";
+		return "hello";
 	}
 }
